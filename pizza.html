@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>La Herbos Pizza</title>
+
+<!-- Header/Title And Embed -->
+
+    <header class="header" id="header">
+        <h1 class="header" id="header">La Herbo Pizza Co</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/T3AHBe0I0yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Delivery Takeout and Location Search-->
+
+    <div class="delivery-or-takeout">
+        <input type="radio" name="deliveryPickup" value="delivery">
+        <label for="delivery">Delivery</label>
+        <input type="radio" name="deliveryPickup" value="pickup">
+        <label for="delivery-type pickup">Pickup</label>
+        <input type="search" id="location" value="">
+    </div>
+
+<!-- Login Section -->
+
+        <form action="login">
+        <div>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+        </div>
+        <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+        </div>
+    <button type="submit">Login</button>
+    </form>
+</header>
+
+<!-- Pizza Images / Elements -->
+
+<body>
+    <ul>
+        <figure>
+        <img src="images/cheesepizza.jpg.jpg" alt="Cheese Pizza">
+        <li>
+        <figcaption><h2>Cheese Pizza</h2></figcaption>
+        </figure>
+        <p>A delicious original cheese pizza.
+        $7.99</p>
+        <select name="pizza-size"><p>Choose Pizza Size!</p>
+            <option value="sizeSmall">Small</option>
+            <option value="sizeMedium">Medium</option>
+            <option value="sizeLarge">Large</option>
+        </select>
+
+        <select name="pizza-crust"><p>Choose Crust Type</p>
+            <option value="thin">Thin Crust</option>
+            <option value="thick">Thick Crust</option>
+            <option value="dDish">Deep Dish</option>
+                <input type="submit" value="Add Selection to Cart">
+        </select>
+        </li>
+        
+        <figure>
+            <img src="images/beyondsausage.png" alt="Beyond Sausage Pizza">
+        <li>
+            <figcaption><h2>Special Sausage Pizza</h2></figcaption>
+            <p>A classical sausage pizza with a twist 
+            $13.99</p>
+        <select name="pizza-size">
+                <option value="sSmall">Small</option>
+                <option value="sMedium">Medium</option>
+                <option value="sLarge">Large</option>
+        </select>
+        <select name="pizza-crust">
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="dDish">Deep Dish</option>
+                    <input type="submit" value="Add Selection to Cart">
+            </select>
+        </li>
+        </figure>
+        <figure>
+            <img src="images/meatballpizza.jpg" alt="Meatball Pizza">
+        <li>
+            <figcaption><h2>Meatball Pizza</h2></figcaption>
+            <p>A cheesy pizza with meatball featuring cheesy stuffed crust. 
+            $11.99</p>
+            <select name="pizza-size">
+                <option value="sSmall">Small</option>
+                <option value="sMedium">Medium</option>
+                <option value="sLarge">Large</option>
+            </select>
+
+            <select name="pizza-crust">
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="dDish">Deep Dish</option>
+                    <input type="submit" value="Add Selection to Cart">
+            </select>
+        </li>
+        </figure>
+        <figure>
+            <li>
+            <img src="images/garlicherb.jpg" alt="Garlic Herb">
+            <figcaption><h2>Herbo Choice</h2></figcaption>
+            <p>A flavorful pizza made of herb and garlic.
+            $14.99</p>
+            <select name="pizza-size">
+                <option value="sSmall">Small</option>
+                <option value="Smedium">Medium</option>
+                <option value="Slarge">Large</option>
+            </select>
+
+        <select name="pCrust">
+            <option value="thin">Thin Crust</option>
+            <option value="thick">Thick Crust</option>
+            <option value="dDish">Deep Dish</option>
+                <input type="submit" value="Add Selection to Cart">
+        </select>
+        </li>
+        </figure>
+    </ul>
+
+<!-- Create your Own Pizza Section -->
+
+    <div id="custom-pizza">
+        <h2>Create Your Own!</h2>
+        <img src="images/custompizzas.png" alt="create your own pizza">
+    <form action="#" class="create-form">
+    <div class="form-group">
+            <label for="pCrust">Choose Crust:</label>
+        <select name="pCrust" id="pizza-crust">
+        <option value="cThin">Thin Crust</option>
+        <option value="hTossed">Hand Tossed</option>
+        <option value="dDish">Deep Dish</option>
+        </select>
+    </div>
+    </form>
+    <div class="form-group">
+            <label for="pSauce">Choose Sauce:</label>
+    <select name="pSauce" id="sauce">
+        <option value="red">Red Sauce</option>
+        <option value="white">White Sauce</option>
+    </select>
+    </div>
+        <div class="form-group">
+        <label for="pToppings">Choose Toppings:</label>
+        <select name="toppings" id="toppings">
+        <option value="mozzarella">Mozzarella</option>
+        <option value="pepperoni">Pepperoni</option>
+        <option value="sausage">Sausage</option>
+        <option value="bacon">Bacon</option>
+        <option value="pickles">pickles</option>
+        <option value="green peppers">Green Peppers</option>
+        <option value="onions">Onions</option>
+        <option value="pineapple">Pineapple</option>
+        <option value="avacado">Pickles</option>
+        <option value="tomato">Tomato</option>
+        <input type="submit" value="Add Selection to Cart">
+    </div>
+
+    <div class="form-group">
+        <section class="beverage"
+            id="beverage">
+        <h2>Choose Beverage</h2>
+            <input type="checkbox"
+            name="beverage" id="dr-pepper"> Dr Pepper
+            <input type="checkbox"
+            name="beverage" id="sprite"> Sprite
+            <input type="checkbox"
+            name="beverage" id="tea"> Sweet Tea
+            <input type="checkbox"
+            name="beverage" id="water"> Water
+            <input type="checkbox"
+            name="beverage" id="milk"> Milk
+        </section>
+        </form>
+    </div>
+</body>
+<!-- Special Instructions/Footer - Review and Branding. -->
+
+    <footer class="footer">
+    <div class="sInstructions" id="sInstructions">Special Instructions</div>
+        <textarea name="review" id="review" cols="20" rows="5" value=""></textarea>
+        <input type="submit" value="Submit Instructions">
+        <input type="submit" value="Checkout Cart">
+        <p class="colophon">site by La Herbo Pizza Company</p>
+    </div>
+    </footer>
+</body>
+</html>
